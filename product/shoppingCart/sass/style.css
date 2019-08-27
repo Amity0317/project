@@ -367,8 +367,8 @@ body {
 }
 
 .card_bg .gray_linear_gradient {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #fff), color-stop(70%, #ddd));
-  background-image: linear-gradient(#fff 30%, #ddd 70%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #fff), color-stop(110%, #ddd));
+  background-image: linear-gradient(#fff 60%, #ddd 110%);
   border-radius: 10px;
   width: 88%;
   height: 75%;
@@ -429,6 +429,17 @@ body {
   padding: 5px 0;
 }
 
+.filter_sort_item span:before {
+  content: url(../images/prodcut/checkbox.png);
+  width: 2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.filter_sort_item input[type="checkbox"]:checked + span:before {
+  content: url(../images/prodcut/checkbox_checked.png);
+}
+
 .checkbox_text span:before {
   /* content: url(../image/store/checkbox.png); */
   width: 2em;
@@ -450,6 +461,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   min-height: 40px;
+}
+
+.select_checkbox {
+  display: none;
+  opacity: 0;
 }
 
 .range {
@@ -588,8 +604,20 @@ body {
   background-color: #fdfff3;
 }
 
+.bd_r10 {
+  border-radius: 0 0 10px 10px;
+}
+
 .m0_50 {
   margin: 0 50px;
+}
+
+.p10 {
+  padding: 30px;
+}
+
+.bt {
+  border-top: 1px solid #c8c8c8;
 }
 
 .m-a {
@@ -627,7 +655,11 @@ body {
   text-align: center;
 }
 
-.ta_c {
+.ta-r {
+  text-align: right;
+}
+
+.dis_f_j_c {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

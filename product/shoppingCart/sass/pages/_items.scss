@@ -21,7 +21,7 @@ body{
     position: relative;
     margin-bottom: 50px;
     .gray_linear_gradient{
-       background-image: linear-gradient(#fff 30%, #ddd 70%);
+       background-image: linear-gradient(#fff 60%, #ddd 110%);
        border-radius: 10px;
        width: 88%;
        height: 75%
@@ -76,13 +76,23 @@ body{
         font-size: 22px;
         font-weight: 600;
         
-    } 
+        }
 }
 .dis_ib{
     display: inline-block;
 }
 .filter_sort_item{
     padding: 5px 0;
+    span:before {
+        content: url(../images/prodcut/checkbox.png);
+        width: 2em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    input[type="checkbox"]:checked + span:before {
+        content: url(../images/prodcut/checkbox_checked.png);
+        // animation: checkbox_click 180ms ease-in;
+    }
 }
 .checkbox_text span:before {
     /* content: url(../image/store/checkbox.png); */
@@ -103,11 +113,20 @@ body{
     display: flex;
     min-height: 40px;
 }
+.select_checkbox {
+    display: none;
+    opacity: 0;
+} 
+// .select_checkbox input[type="checkbox"] {
+//     display: none;
+//     opacity: 0;
+// } 
 .range {
     width: 150px;
     height: 10px;
     border-radius: 4px;
     background-color: #ddd;
+    
 }
 .range_stretch {
     position: absolute;

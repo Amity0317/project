@@ -37,8 +37,17 @@ body{
 .bg_fdfff3{
     background-color: #fdfff3;
 }
+.bd_r10{
+  border-radius: 0 0 10px 10px;
+}
 .m0_50{
     margin: 0 50px;
+}
+.p10{
+  padding: 30px;
+}
+.bt{
+  border-top: 1px solid #c8c8c8;
 }
 .m-a{margin: auto;}
 
@@ -67,7 +76,10 @@ body{
     width: 50px;
     text-align: center;
 }
-.ta_c{
+.ta-r{
+  text-align: right;
+}
+.dis_f_j_c{
   display: flex;
   justify-content: center;
 }
