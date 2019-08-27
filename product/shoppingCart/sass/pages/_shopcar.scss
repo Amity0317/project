@@ -27,6 +27,9 @@ body{
 .shopping_cart_item img{
     padding: 10px;
 }
+.shopping_cart_item{
+  align-items: center;
+}
 .shopping_cart > div + div {
     // height: 30px;
         border-left: 1px solid #c8c8c8;
@@ -42,18 +45,23 @@ body{
 .btnLess,.btnPlus{
     height: 30px;
     width: 30px;
-    border: 2px solid #f09100;
+    border: 1px solid #f09100;
     background-color: #f09100;
-    line-height: 30px;
+    vertical-align: center;
     padding: 1px 0;
     color: #fff;
-    
+    i{
+      line-height: 30px;
+    }
 }
 .btnLess{
     border-radius: 10px 0 0 10px;
 }
 .btnPlus{
     border-radius: 0 10px  10px 0;
+}
+.btn_bor{
+  border: transparent;
 }
 .quantity{
     width: 50px;
