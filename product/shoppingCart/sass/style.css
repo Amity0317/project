@@ -627,6 +627,19 @@ body {
   text-align: center;
 }
 
+.ta_c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mlr {
+  margin: 20px 10px;
+}
+
 .col-1 {
   width: 8.33333%;
 }
