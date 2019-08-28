@@ -89,6 +89,9 @@ body{
   margin: 20px 10px;
 }
 @include rwd(desktop){
+  .dis-lg-n{
+    display: none;
+  }
   
   // ===================
 .col-lg-1 {
@@ -136,8 +139,17 @@ body{
     }
  // ===================
  @include rwd(phone){
+  .m40_0_0{
+    margin: 40px 0 0;
+}
   .dis_n {
     display: none;
+}
+.bg_fdfff3{
+  border-radius: 10px 10px 0 0 ;
+}
+.bd_r10{
+  border-radius: 0 0 10px 10px;
 }
      // ===================
   .col-1 {

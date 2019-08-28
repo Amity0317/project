@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/6a6d2775fc.js"></script>
 </head>
 
-<body>  
+<body>
 
     <header class="header_navbar">
         <div class="navbar_cloud">
@@ -50,6 +50,9 @@
                     <h5 class="m-0">商品名稱</h5>
                 </div>
                 <div class="col-lg-2 dis_f_jc_c shopping_cart_title_text">
+                    <h5 class="m-0">單價</h5>
+                </div>
+                <div class="col-lg-2 dis_f_jc_c shopping_cart_title_text">
                     <h5 class="m-0">數量</h5>
                 </div>
                 <div class="col-lg-2 dis_f_jc_c shopping_cart_title_text">
@@ -62,7 +65,7 @@
 
             <form action="cartUpdate.php" method="get">
                 <div class="bg_fdfff3">
-                    <div class="shopping_cart  dis_f_jc_c">
+                    <div class="shopping_cart  m40_0_0  dis_f_jc_c">
                         <div class="m-a col-lg-3 dis_f_jc_c shopping_cart_item">
                             <div class="po-r w-50p m-a">
                                 <img src="https://picsum.photos/100/100?random=1">
@@ -72,6 +75,9 @@
                         <div class="col-lg-3 dis_f_jc_c shopping_cart_item">
                             <p>仙人掌-紅色</p>
                             <input type="hidden" name="pName" value="仙人掌-紅色">
+                            <input type="hidden" name="pName" value="怪獸外套-花花">
+                            <p class="dis-lg-n">單價：$450</p>
+                            <p class="dis-lg-n">小計：NT.450</p>
                         </div>
                         <div class="col-lg-2 dis_f_jc_c shopping_cart_item">
                             <p>$<span class="thePrice">450</span></p>
@@ -87,6 +93,10 @@
                                     <i class="fas fa-plus"></i>
                                 </button>
                             </div>
+                        </div>
+                        <div class="col-lg-2 dis_f_jc_c shopping_cart_item">
+                            <p>$<span class="thePrice">450</span></p>
+                            <input type="hidden" name="pPrice" value="299">
                         </div>
                         <div class="col-lg-2 dis_f_jc_c shopping_cart_item">
                             <div class="trash_btn">

@@ -644,6 +644,9 @@ body {
 }
 
 @media all and (min-width: 768px) {
+  .dis-lg-n {
+    display: none;
+  }
   .col-lg-1 {
     width: 8.33333%;
   }
@@ -692,8 +695,17 @@ body {
 }
 
 @media all and (max-width: 767px) {
+  .m40_0_0 {
+    margin: 40px 0 0;
+  }
   .dis_n {
     display: none;
+  }
+  .bg_fdfff3 {
+    border-radius: 10px 10px 0 0;
+  }
+  .bd_r10 {
+    border-radius: 0 0 10px 10px;
   }
   .col-1 {
     width: 8.33333%;
