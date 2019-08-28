@@ -2,6 +2,7 @@ body{
     background-image: url('../images/background/bgi.svg');
     background-size: cover;
 }
+
 .shopping_cart_title{
     background-color: #a4c174;
     border-radius: 10px 10px 0 0 ;
@@ -17,6 +18,7 @@ body{
     width: 20%;
     text-align: center;
 }
+
 .dis_f_jc_c{
     display: flex;
     justify-content: center;
@@ -86,8 +88,59 @@ body{
 .mlr{
   margin: 20px 10px;
 }
-// ===================
-.col-1 {
+@include rwd(desktop){
+  
+  // ===================
+.col-lg-1 {
+  width: 8.33333%; }
+
+.col-lg-2 {
+  width: 16.66667%; }
+
+.col-lg-3 {
+  width: 25%; }
+
+.col-lg-4 {
+  width: 33.33333%; }
+
+.col-lg-5 {
+  width: 41.66667%; }
+
+.col-lg-6 {
+  width: 50%; }
+
+.col-lg-7 {
+  width: 58.33333%; }
+
+.col-lg-8 {
+  width: 66.66667%; }
+
+.col-lg-9 {
+  width: 75%; }
+
+.col-lg-10 {
+  width: 83.33333%; }
+
+.col-lg-11 {
+  width: 91.66667%; }
+
+.col-lg-12 {
+  width: 100%; }
+    [class^="col-"] {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 10px; }
+    .trash{
+      display: none;
+    }
+    }
+ // ===================
+ @include rwd(phone){
+  .dis_n {
+    display: none;
+}
+     // ===================
+  .col-1 {
     width: 8.33333%; }
   
   .col-2 {
@@ -122,14 +175,5 @@ body{
   
   .col-12 {
     width: 100%; }
-   
-    [class^="col-"] {
-    float: left;
-    box-sizing: border-box;
-    padding: 0 10px; }
- // ===================
- @media screen and (min-width: 768px){
-     .trash_icon{
-         display: none;
-     }
- }
+}
+     

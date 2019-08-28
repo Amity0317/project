@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>items_page</title>
     <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="sass/pages/owl.carousel.min.css">
+    <link rel="stylesheet" href="sass/pages/owl.theme.default.css">
     <script src="https://kit.fontawesome.com/6a6d2775fc.js"></script>
+    <script href="jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -54,8 +57,8 @@
                                 <span class="dis_ib pad_5_0_10">價格(0~1500元)</span>
                                 <div class="range_wrap">
                                     <div id="range" class="range">
-                                        <div id="range_stretch" class="range_stretch"  style="width:150px;margin-left: 0px"></div>
-                                        <button id="circle_button1" class="circle_button circle_button1" style="margin-left: 150px"></button>
+                                        <div id="range_stretch" class="range_stretch"  style="width:130px;margin-left: 0px"></div>
+                                        <button id="circle_button1" class="circle_button circle_button1" style="margin-left: 120px"></button>
                                         <button id="circle_button2" class="circle_button circle_button2"></button>
                                         <input id="circle_input1" class="circle_input1 selectors" type="number" min="0" max="1500" /> ~
                                         <input id="circle_input2" class="circle_input2 selectors" type="number" min="0" max="1500" /> 元
@@ -85,7 +88,7 @@
                                 </div>
                             </li>
                             <li class="filter_sort">
-                                <span>包包</span>
+                                <span>衣服</span>
                                 <div class="category">
                                     <label class="filter_sort_item dis_ib">
                                         <input class="select_checkbox pad_5_0_10" value="red_bag_class" type="checkbox"
@@ -107,7 +110,7 @@
                                 </div>
                             </li>
                             <li class="filter_sort">
-                                <span>包包</span>
+                                <span>馬克杯</span>
                                 <div class="category">
                                     <label class="filter_sort_item dis_ib">
                                         <input class="select_checkbox pad_5_0_10" ｚvalue="red_bag_class" type="checkbox"
@@ -133,7 +136,7 @@
                 </div>
             </aside>
             <div class="all_sort_same">
-                <div class="sort_same">
+                <div class="sort_same owl-carousel owl-theme">
                     <div class="card_bg card_bg1">
                         <div class="gray_linear_gradient center">
                             <div class="sort_same_item_img center">
@@ -165,7 +168,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sort_same">
+                <div class="sort_same owl-carousel owl-theme">
                     <div class="card_bg card_bg2">
                         <div class="gray_linear_gradient center">
                             <div class="sort_same_item_img center">
@@ -197,7 +200,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sort_same">
+                <div class="sort_same owl-carousel owl-theme">
                     <div class="card_bg card_bg3">
                         <div class="gray_linear_gradient center">
                             <div class="sort_same_item_img center">
@@ -229,7 +232,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sort_same">
+                <div class="sort_same owl-carousel owl-theme">
                     <div class="card_bg card_bg4">
                         <div class="gray_linear_gradient center">
                             <div class="sort_same_item_img center">
@@ -275,6 +278,29 @@
             Copyright &copy; 2019 West Land Inc.
         </p>
     </footer>
+    <!-- ====================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:2,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+    </script>
+    
+    <!-- ====================================== -->
 
 </body>
 
